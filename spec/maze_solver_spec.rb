@@ -177,7 +177,7 @@ describe 'MazeSolver' do
 ###########".strip
 
         maze_solver.solve
-        # expect($stdout).to receive(:puts).with(@solution_string)
+        expect($stdout).to receive(:puts).with(@solution_string)
 
         maze_solver.display_solution_path
       end
